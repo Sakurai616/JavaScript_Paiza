@@ -39,3 +39,47 @@ process.stdin.resume();
 process.stdin.setEncoding('utf8');
 var number = parseInt(Math.random() * 6) + 1;
 console.log("サイコロの目は" + number + "です");
+
+// 演習課題「計算してみよう」
+// 計算する
+process.stdin.resume();
+process.stdin.setEncoding('utf8');
+// ここに計算式を書いて、出力する
+console.log(1234 * 5678 / 2);
+
+// 演習課題「変数で計算してみよう」
+// 計算する
+process.stdin.resume();
+process.stdin.setEncoding('utf8');
+var a = 31;
+var b = 17;
+// 以下に、aとbをかけ算し、結果を出力するコードを書く
+console.log(a * b);
+
+// 演習課題「余りを計算してみよう」
+// 計算する
+process.stdin.resume();
+process.stdin.setEncoding('utf8');
+var x = 8;
+var y = 5;
+// 以下に、xをyで割ったときの余りを計算し、結果を出力するコードを書く
+console.log(x % y);
+
+// 演習課題「カッコを付けて計算してみよう」
+// 計算する
+process.stdin.resume();
+process.stdin.setEncoding('utf8');
+// ここに計算式を書いて、出力する
+var number = (1234 + 5678) * 3;
+console.log(number);
+
+// 演習課題「スライムの合計体重を出力！」
+process.stdin.resume();
+process.stdin.setEncoding('utf8');
+var number = parseInt(Math.random() * 10) + 1;// 匹数 1 ～ 10
+console.log("体重100キロのスライムが" + number + "匹あらわれた。");
+// 合計体重 = 匹数 × 100
+total = number * 100;
+console.log("スライムの合計体重は" + total + "キロです。");
+
+
