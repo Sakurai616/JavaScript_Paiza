@@ -82,4 +82,40 @@ console.log("体重100キロのスライムが" + number + "匹あらわれた�
 total = number * 100;
 console.log("スライムの合計体重は" + total + "キロです。");
 
+// 演習課題「順位が1位だったら「おめでとう！」と表示しよう」
+// if文による条件分岐
+process.stdin.resume();
+process.stdin.setEncoding('utf8');
+var number = parseInt(Math.random() * 3) + 1;
+console.log("あなたの順位は" + number + "位です");
+// ここにif文を追加する
+if (number == 1) {
+    console.log("あなたの順位は" + number + "位です");
+    console.log("おめでとう！");
+}
 
+// 演習課題「順位が2位以下だったら「あと少し！」と表示する」
+// if文による条件分岐
+process.stdin.resume();
+process.stdin.setEncoding('utf8');
+var number = parseInt(Math.random() * 3) + 1;
+// ここにif文を追加する
+if (number >= 2) {
+    console.log("あなたの順位は" + number + "位です");
+    console.log("あと少し！");
+}
+
+// 演習課題「順位に合わせてメッセージを表示する」
+// if文による条件分岐　else if文
+process.stdin.resume();
+process.stdin.setEncoding('utf8');
+var number = parseInt(Math.random() * 5) + 1;
+console.log("あなたの順位は" + number + "位です");
+// ここにif文を追加する
+if (number == 1) {
+    console.log("おめでとう！");
+} else if (number == 2) {
+    console.log("あと少し！");
+} else {
+    console.log("よくがんばったね");
+}
